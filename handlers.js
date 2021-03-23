@@ -19,7 +19,7 @@ export const populateInputs = () => {
     for (let i = 0; i < spans.length; i++) {
         const newIn = document.createElement('input');
         newIn.type = 'text';
-        newIn.placeholder = spans[i].textContent;
+        newIn.placeholder = spans[i].getAttribute('data-desc');
 
         inputsDiv.appendChild(newIn);
     }
