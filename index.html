@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <title>Ogre Madlib</title>
+    <script type="module" src="app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="gutter-right logo">
+            <img src="assets/big-logo.png"/>
+        </div>
+    </header>
+
+    <main>
+        <section class="main-section">
+            <h2>
+                Ogre Madlib
+            </h2>
+
+            <fieldset id="story-select">
+                <input name="story-select" type="radio" value="1" checked>
+                <label for="1">story 1</label>
+
+                <input name="story-select" type="radio" value="2">
+                <label for="2">story 2</label>
+            </fieldset>
+
+            <fieldset class="inputs toggle" id="inputs">
+            </fieldset>
+
+            <img src="./assets/shrek.png" class="hidden toggle shrek" id="shrek">
+
+            <div class="story toggle hidden" id="story-1">
+                <p>Somebody once told me the world is gonna <span>Verb</span> me</p>
+                <p>I ain't the sharpest <span>Noun</span> in the shed</p>
+                <p>She was looking kind of dumb with her <span>Noun</span> and her thumb</p>
+                <p>In the shape of an "<span>Letter of the Alphabet</span>" on her forehead</p>
+                <br />
+                <p>Well the <span>Plural Noun</span> start coming and they don't stop coming</p>
+                <p>Fed to the rules and I hit the ground <span>Verb Ending In -ing</span></p>
+                <p>Didn't make sense not to <span>Verb</span> for fun</p>
+                <p>Your brain gets <span>Adjective</span> but your <span>Noun</span> gets dumb</p>
+                <p>So much to <span>Verb</span>, so much to see</p>
+                <p>So what's wrong with taking the <span>Noun</span> streets?</p>
+                <p>You'll never <span>Verb</span> if you don't go</p>
+                <p>You'll never <span>Verb</span> if you don't glow</p>
+            </div>
+            <div class="story toggle hidden" id="story-2">
+                <p>Somebody once asked could I spare some <span>Noun</span> for gas?</p>
+                <p>I need to get myself away from this <span>Noun</span></p>
+                <p>I said, "<span>Expression</span>" what a concept</p>
+                <p>I could use a little <span>Noun</span> myself</p>
+                <p>And we could all use a <span>Adjective</span>> change</p>
+                <br />
+                <p>Well the <span>Plural Noun</span> start coming and they don't stop coming</p>
+                <p>Fed to the rules and I hit the ground <span>Verb Ending In -ing</span></p>
+                <p>Didn't make sense not to <span>Verb</span> for fun</p>
+                <p>Your brain gets <span>Adjective</span> but your <span>Noun</span> gets dumb</p>
+                <p>So much to <span>Verb</span>, so much to see</p>
+                <p>So what's wrong with taking the <span>Noun</span> streets?</p>
+                <p>You'll never <span>Verb</span> if you don't go</p>
+                <p>You'll never <span>Verb</span> if you don't glow</p>
+            </div>
+            <div class="story toggle hidden" id="story-3">
+                <p>test test test <span>Test1</span></p>
+                <p>test test test <span>Test2</span></p>
+                <p>test test test <span>Test3</span></p>
+            </div>
+
+            <button id="button-submit">Submit</button>
+
+            <span class="hidden" id="warning">Please fill out every word!</span>
+        </section>
+    </main>
+
+    <footer>
+        <div class="copy gutter-right">&#x1f12f; 2020 Alchemy Code Lab</div>
+    </footer>
+</body>
+
+</html>
